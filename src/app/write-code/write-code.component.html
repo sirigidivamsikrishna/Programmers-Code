@@ -1,0 +1,58 @@
+<div style="text-align: center">
+  <textarea
+    [autoResize]="true"
+    style="min-height: 100px; width: 705px; max-width: 100%; font-size: 18px"
+    pInputTextarea
+    placeholder="Paste your code here..."
+    [(ngModel)]="writeInputCode"
+  ></textarea>
+  &nbsp;&nbsp;&nbsp;
+</div>
+<br />
+<div style="display: flex; justify-content: center">
+  <button
+    (click)="explainCode()"
+    pButton
+    type="button"
+    label="explain"
+  ></button>
+  &nbsp; &nbsp;
+  <button (click)="DebugCode()" pButton type="button" label="Debug"></button>
+  &nbsp; &nbsp;
+  <button (click)="rateCode()" pButton type="button" label="Rate"></button>
+  &nbsp; &nbsp;
+</div>
+<br />
+<div *ngIf="invalidCode">
+  <div style="text-align: center; color: white; font-size: 20px">
+    <p>Please Paste Valid Code</p>
+  </div>
+</div>
+<br />
+<div style="display: flex; justify-content: center" *ngIf="outputText">
+  <div style="min-width: 900px; color: white; font-size: 20px">
+    Here is your Responce:
+  </div>
+  <br /><br />
+</div>
+<br />
+<div *ngIf="outputText">
+  <div style="display: flex; justify-content: center">
+    <div>
+      <div class="codeAnswer">
+        <pre style="white-space: pre-wrap; margin-top: 0px">{{
+          outputText
+        }}</pre>
+      </div>
+    </div>
+  </div>
+</div>
+<br /><br />
+<ngx-spinner
+  bdColor="rgba(0, 0, 0, 0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-clip-rotate"
+  [fullScreen]="true"
+  ><p style="color: white">Please wait a bit longer...</p></ngx-spinner
+>

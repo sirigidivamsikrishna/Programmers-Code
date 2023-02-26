@@ -1,5 +1,5 @@
 {
-  "name": "pdf-reader",
+  "name": "ProgrammersCode",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -13,11 +13,18 @@
     "@angular/animations": "^14.2.0",
     "@angular/common": "^14.2.0",
     "@angular/compiler": "^14.2.0",
-    "@angular/core": "^14.2.0",
+    "@angular/core": "^14.2.12",
     "@angular/forms": "^14.2.0",
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "@fingerprintjs/fingerprintjs-pro-angular": "^1.1.1",
+    "@ngrx/store": "^1.0.0",
+    "axios": "^1.3.4",
+    "get-browser-fingerprint": "^2.1.1",
+    "ngx-spinner": "^14.0.0",
+    "primeicons": "^6.0.1",
+    "primeng": "^14.2.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

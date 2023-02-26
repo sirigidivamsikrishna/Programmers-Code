@@ -1,0 +1,68 @@
+.codeAnswer {
+    max-width: 900px;
+    min-width: 900px;
+    border-radius: 5px;
+    border: 1px solid rgb(26, 25, 25);
+    color: white;
+    white-space: pre-wrap;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(50, 49, 49);
+}
+
+::ng-deep {
+    .p-inputtext {
+        padding: 20px;
+        min-width: 900px;
+        background-color:rgb(50, 49, 49);
+        color: WHITE;
+    }
+
+    .p-inputtext:enabled:hover {
+        border-color: #ced4da;
+    }
+
+    .p-inputtext:enabled:focus {
+        outline: 0 none;
+        outline-offset: 0;
+        box-shadow: none !important;
+        border-color: #ced4da
+    }
+
+    .p-button {
+        background-color:rgb(50, 49, 49);
+        color: white;
+        font-size: 18px;
+        border: none;
+        min-width: 120px;
+    }
+
+    .p-button:focus {
+        box-shadow: none !important;
+    }
+
+    .p-button:enabled:hover {
+        background-color:rgb(41 40 40);
+        color: #ffffff;
+        border-color: rgb(62 58 58);
+    }
+         input:-webkit-autofill,
+         input:-webkit-autofill:hover,
+         input:-webkit-autofill:focus,
+         input:-webkit-autofill:active {
+             -webkit-box-shadow: 0 0 0 30px rgb(50, 49, 49) inset !important;
+         }
+    
+         input:-webkit-autofill {
+             -webkit-text-fill-color: rgb(255, 255, 255) !important;
+         }
+    
+         input:-webkit-autofill,
+         input:-webkit-autofill:hover,
+         input:-webkit-autofill:focus,
+         input:-webkit-autofill:active {
+             -webkit-box-shadow: 0 0 0 30px rgb(50, 49, 49)inset !important;
+             transition: background-color 5000s ease-in-out 0s;
+             -webkit-text-fill-color: #fff !important;
+         }
+}
